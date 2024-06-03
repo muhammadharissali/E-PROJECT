@@ -1,0 +1,33 @@
+.links a{
+    color:black;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 400;
+}
+.icon {
+    font-size: 30px ;
+}
+.bottom{
+    height: 8%vh;
+    width: 100%;                    
+}
+
+.nav-item{
+   
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.nav-item:hover {
+    background-color: black;
+}
+
+.fade-in {
+        opacity: 0; /* Start invisible */
+        transition: opacity 2s ease-in; /* Transition to visible over 2 seconds */
+    }
+
+    .fade-in.visible {
+        opacity: 1; /* End state: fully visible */
+    }
+

@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rainwater Harvesting Website</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="icon" href="Assests/Img/icon.jpg" />
+    <style>
+        .navbar-nav .nav-link {
+            transition: all 0.3s ease;
+        }
+
+        .navbar-nav .nav-link:hover {
+            color: #000000 !important;
+        }
+
+
+        section {
+            padding: 20px;
+            text-align: center;
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 1s ease-out, transform 1s ease-out;
+        }
+
+        section.fade-in {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .image-container img {
+            transition: transform 0.3s ease, opacity 0.3s ease;
+        }
+
+        .image-container img:hover {
+            transform: scale(1.05);
+            opacity: 0.9;
+        }
+
+        .responsive {
+            transition: all 0.3s ease;
+        }
+
+        .responsive:hover {
+            transform: scale(1.05);
+        }
+
+        footer {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        /* Smooth scroll for navigation links */
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+
+<body style=" background: linear-gradient(96.9deg, rgb(80, 255, 207) 10.5%, rgb(22, 185, 255) 74.4%)">
+    <!-- Navigation Bar Section -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-info">
+        <a class="navbar-brand" href="#"><img src="Assests/Img/logoo.png" width="50" /></a>
+        <a class="navbar-brand" href="#" >Rainwater Harvesting</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#residential">Residential</a></li>
+                <li class="nav-item"><a class="nav-link" href="#commercial">Commercial</a></li>
+                <li class="nav-item"><a class="nav-link" href="#products">Products</a></li>
+                <li class="nav-item"><a class="nav-link" href="#facts">Facts</a></li>
+                <li class="nav-item"><a class="nav-link" href="#usage">Usage</a></li>
+                <li class="nav-item"><a class="nav-link" href="#developments">Developments</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Contact Us</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Banner Section -->
+    <div class="banner">
+        <img src="Assests/Img/banner/banner.jpeg" alt="banner" style="width: 100%; height: auto;">
+    </div>
+    <br>
+    <!-- Home Page Section -->
+    <section id="home" class="container" style="background-color: rgb(90, 175, 255);">
+        <h1>Welcome to Rainwater Harvesting</h1>
+        <hr>
+        <div class="container">
+            <p style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Welcome to Rainwater Harvesting Hub, On our home page, you'll find an overview of various rainwater
+                harvesting techniques accompanied by informative images. We're dedicated to promoting sustainable water
+                management practices and providing you with the tools and information you need to make a positive impact
+                on the environment.</p>
+            <div class="container service mt-5">
+                <h1 class="text-center ">WHAT DO WE DO?</h1>
+                <div class="row text-center mt-5">
+                    <hr>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="image-container">
+                            <img src="Assests/Img/Direct-Pumped.jpg" alt="Image 1" style="width: 60%; height: auto;"
+                                class="responsive"><br>
+                                <br>
+                            <h2 class="responsive">Direct pumped – Suction</h2>
+                            <hr>
+                        </div>
+                        <div class="paragraph-container">
+                            <p style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">As the pump is not situated inside the tank, cleaning the filter and the pump becomes
+                                easier. The backup from the mains is also dealt with by the suction pipe and so mains
+                                water need not be directed to the underground tank.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="image-container">
+                            <img src="Assests/Img/ground water.jpeg" alt="Image 2"
+                                style="width: 60%; height: auto;" class="responsive"><br><br>
+                            <h2 class="responsive">Groundwater Recharging</h2>
+    
+                            <hr>
+                        </div>
+                        <div class="paragraph-container">
+                            <p style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">We have developed a new method of groundwater recharge, called 'V-wire injection well'
+                                technology. This allows for the groundwater table to be replenished and thus abate water
+                                scarcity.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="image-container">
+                            <img src="Assests/Img/pic11.jpeg" alt="Image 3"
+                                style="width: 60%; height: auto;" class="responsive"><br><br>
+                            <h2 class="responsive">Water-Butt-Garden</h2>
+                            <br>
+                            <hr>
+                            
+                        </div>
+                        <div class="paragraph-container">
+                            <p style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">The simplest rainwater harvesting system that can be used is the waterbutt or a small
+                                storage tank. The water that is collected from different sources such as the roofs and
+                                other impermeable surfaces and the natural rainwater is filtered and stored in a
+                                waterbutt.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <br>
+    <!-- Residential Area Section -->
+    <section id="residential" class="container" style="background-color: rgb(90, 175, 255);">
+        <h2>Rainwater Harvesting in Residential Areas</h2>
+         <hr>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="image-container">
+                    <img src="Assests/Img/residential areas.jpg" alt="Image" class="img-fluid">
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="paragraph-container">
+                    <h3>Residential Area</h3>
+                    <p style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;"> Explore how rainwater harvesting can benefit homeowners. Learn about different systems, such as
+                        rain barrels, rooftop harvesting, and greywater recycling, tailored for residential properties.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <br>
+    <!-- Commercial Area Section -->
+<section id="commercial" class="container" style="background-color: rgb(90, 175, 255);">
+    <h2>Rainwater Harvesting in Commercial Areas</h2> 
+    <hr>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="paragraph-container">
+                <h3>Commercial Areas</h3>
+                <p> Discover how businesses and institutions can implement rainwater harvesting solutions to reduce
+                    water consumption and environmental impact. Explore commercial-scale systems and case studies
+                    highlighting successful implementations.
+                </p>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="image-container">
+                <img src="Assests/Img/commercial areas.jpg" alt="Image" class="img-fluid">
+            </div>
+        </div>
+    </div>
+</section>
+    <br>
+    <!-- Products and Techniques Section -->
+    <section id="products" class="container" style="background-color: rgb(90, 175, 255);">
+        <h2>RAINY DUAL INTENSITY RAIN WATER HARVESTING FILTERS</h2>
+        <hr>
+        <div class="row">
+            <div class="col-md-12">
+                <h3>Modern Technology</h3>
+                <p style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">'Rainy' filters are made with highly durable, food-grade material and have self-cleaning capabilities
+                    to auto-flush out debris. Our filters work on the principle of cohesion & centrifugal force. This
+                    enables filtering at variable intensity of rainfall without affecting the efficiency.</p>
+            </div>
+        </div>
+        <div id="carouselExampleSlidesOnly" style="width: 35%; height: auto; margin: auto;" class="carousel slide"
+            data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="Assests/Img/slides/product image.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="Assests/Img/slides/product image  2.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="Assests/Img/slides/product image  3.jpg" class="d-block w-100" alt="...">
+                </div>
+            </div>
+        </div>
+    </section>
+    <br>
+    <!-- Facts Section -->
+    <section id="facts" class="container" style="background-color: rgb(90, 175, 255);">
+        <h2>Facts and Methods</h2>
+         <hr>
+        <div class="banner" style="margin-top: 10px;">
+            <img src="Assests/Img/facts and method img.png" alt="banner" style="width: 100%; height: auto;"
+                class="responsive">
+            </div>
+            <br>
+            <ul>
+                <li style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">It also reduces the load on the drainage systems which in turn reduces the effect of flooding wherein
+                    run-off water is channeled into the tanks. This is particular good system in areas where the only mains
+                    available are combined sewer systems.</li><br>
+                <li style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Using a rainwater harvesting system reduces the use of mains water. So only less amount of water is
+                    required to be drawn artificially.</li><br>
+                <li style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">This is particular good system in areas where the only mains available are combined sewer systems.
+                    It also reduces the water bills and loads on water systems which otherwise would have feed the house.
+                </li>
+            </ul>
+    </section>
+    <br>
+    <!-- Usage Section -->
+    <section id="usage" class="container" style="background-color: rgb(90, 175, 255);">
+        <h2>Effective Use of Harvested Water</h2>
+        <hr>
+        <div class="image-container">
+            <img src="Assests/Img/save water 1.jpg" alt="Image 1" style="width: 80%;"  class="responsive">
+        </div>
+        </div>
+        <div class="container">
+            <div class="paragraph-container"><br>
+                <p style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">We live in an environment comprising natural resources that we use on a daily basis. These
+                    environmental resources such as clean air, fresh water, energy and oils are all resources that have
+                    limited supplies, and need conservation. One of these environmental resources is water, which is
+                    such an invaluable resource and is essential for life to sustain.</p>
+            </div>
+<hr>
+            <!-- Right side image followed by paragraph on the left -->
+            <div class="container">
+                <div class="image-container">
+                    <img src="Assests/Img/save water 2.webp" alt="Image 2" style="width: 90%;" class="responsive">
+                </div>
+                <div class="paragraph-container"><br>
+                    <p style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Children, including adults, have a habit of filling more water than they intend to drink in their
+                        cup or glass. Children especially are used to filling their glass to the top, consuming only
+                        half the water and draining the rest in the sink.
+
+                        As parents, you need to train them only to fill the amount they intend on drinking. If they
+                        happen to have leftover water in the glass, tell them to collect it in a jug and later water the
+                        plants.
+                    </p>
+                </div>
+            </div>
+    </section>
+    <br>
+    <!-- Developments Section -->
+    <section id="developments" class="container" style="background-color:rgb(90, 175, 255);">
+        <h2>Latest Developments</h2>
+        <hr>
+        <img src="Assests/Img/Latest Development.png" alt="Image" style="width: 80%;"  class="responsive">
+        <br><br>
+         <p style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">ation of smart technology into rainwater harvesting systems is one of the biggest trends in the future
+            of this industry. Smart technology allows for real-time monitoring of water usage and storage, automatic
+            scheduling of irrigation systems, and remote access to control and manage the system.</p>
+        </section>
+        <br>
+        <section id="contact" class="container">
+<h2>MAP</h2>
+<br>
+            <div class="ratio ratio-16x9">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14477.256537922056!2d67.1518249!3d24.8872643!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb339999415e0c3%3A0x36742eee0fd9c291!2sAptech%20Metro%20Star%20Gate!5e0!3m2!1sen!2s!4v1714947085560!5m2!1sen!2s"
+                    title="YouTube video" allowfullscreen></iframe>
+            </div>
+        
+        </section>
+        <br>
+    
+    <!-- Footer Section -->
+    <footer class="responsive" style="position:relative; border-width: 0;">
+        <div style="background: linear-gradient(96.9deg, rgb(80, 255, 207) 10.5%, rgb(22, 185, 255) 74.4%); padding: 50px 20px;">
+            <div class="container text-center">
+                <div class="row">
+                    <div class="col-md-4">
+                        <h3 class="address"><i class="fa-solid fa-cloud-sun-rain">&nbsp;</i>Rainy</h3>
+                        <p>Rainwater Harvesting System <br>Shah Faisal Colony Flyover, <br> Faisal Cantonment, Karachi, Karachi City, Sindh</p>
+                    </div>
+                    <div class="col-md-4">
+                        <h4>Contact Us</h4>
+                        <ul class="links">
+                            <li><i class="fa-brands fa-whatsapp"></i>&nbsp;<a href="#">0123456789</a></li>
+                            <li><i class="fa-solid fa-phone"></i>&nbsp;<a href="#">012555755</a></li>
+                            <li><i class="fa-solid fa-tty"></i>&nbsp;<a href="#">Telephone</a></li>
+                            <li><i class="fa-solid fa-envelope"></i>&nbsp;<a href="#">RainwaterHarvesting.com</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4">
+                        <h4>Follow us</h4><br>
+                        <div class="icon">
+                            <i class="fa-brands fa-instagram"></i>&nbsp;
+                            <i class="fa-brands fa-facebook"></i>&nbsp;
+                            <i class="fa-brands fa-linkedin"></i>&nbsp;
+                            <i class="fa-brands fa-twitter"></i>&nbsp;<br>
+                            <button type="button" class="btn btn-warning rounded-pill mt-2">FAQ</button>
+                            <button type="button" class="btn btn-warning rounded-pill mt-2">Enquire</button>
+                            <button type="button" class="btn btn-warning rounded-pill mt-2">Review</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bg-info text-center fs-5 py-2">Copyright © 2024 Aptech All Rights Reserved</div>
+    </footer>
+    
+    <style>
+       
+    </style>
+    
+
+    <!-- Bootstrap and jQuery JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- JS animations -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const sections = document.querySelectorAll("section");
+
+            const observer = new IntersectionObserver(entries => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add("fade-in");
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, {
+                threshold: 0.1
+            });
+
+            sections.forEach(section => {
+                observer.observe(section);
+            });
+        });
+    </script>
+</body>
+
+</html>
